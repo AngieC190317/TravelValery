@@ -36,6 +36,7 @@ const routes: Routes = [
     path: 'trips',
     loadChildren: () => import('./viajes/viajes.module').then(m => m.ViajesPageModule)
   },
+<<<<<<< HEAD
   {
     path: 'contac',
     loadChildren: () => import('./contac/contac.module').then(m => m.ContacPageModule)
@@ -43,6 +44,12 @@ const routes: Routes = [
   {
     path: 'nosotros',
     loadChildren: () => import('./nosotros/nosotros.module').then(m => m.NosotrosPageModule)
+=======
+  // Nueva ruta para los detalles del paquete con parámetro dinámico
+  {
+    path: 'detalles-paquete/:id',
+    loadChildren: () => import('./tab3/tab3.module').then(m => m.Tab3PageModule)
+>>>>>>> 0f644c2682c86578f0aae6d5f193e90bb3a1338b
   }
 
 
