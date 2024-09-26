@@ -17,7 +17,7 @@ export class Tab3Page implements OnInit {
     private formBuilder: FormBuilder,
     private alertController: AlertController,
     private navController: NavController,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
   ) {
     // Inicializa el formulario
     this.reservaForm = this.formBuilder.group({

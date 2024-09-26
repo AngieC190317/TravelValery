@@ -1,5 +1,10 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="volver()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
     <ion-title>Reserva de Viaje</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -58,6 +63,6 @@
     </ion-card>
 
     <ion-button expand="full" type="submit">Reservar</ion-button>
-    <ion-button expand="full" (click)="volver()">Devolver</ion-button>
+    <!--<ion-button expand="full" (click)="volver()">Devolver</ion-button>-->
   </form>
 </ion-content>

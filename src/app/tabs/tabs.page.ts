@@ -15,4 +15,7 @@ export class TabsPage {
   hideInstruction() {
     this.instructionMessage = '';
   }
+
+
+
 }
