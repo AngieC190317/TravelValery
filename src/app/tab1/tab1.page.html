@@ -1,17 +1,63 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app>
+  <!-- Menu lateral -->
+  <ion-menu side="start" menuId="first" contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+        <!-- Botón para cerrar el menú -->
+        <ion-buttons slot="start">
+          <ion-button (click)="closeMenu()">
+            <ion-icon name="arrow-back"></ion-icon> <!-- Icono de flecha hacia atrás -->
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item (click)="navigateTo('contact')">
+          <ion-icon name="call" slot="start"></ion-icon>
+          <span>Contacto</span>
+        </ion-item>
+        <ion-item (click)="navigateTo('nosotros')">
+          <ion-icon name="information-circle" slot="start"></ion-icon>
+          <span>Nosotros</span>
+        </ion-item>
+        <ion-item (click)="navigateTo('viajes')">
+          <ion-icon name="airplane" slot="start"></ion-icon>
+          <span>Viajes</span>
+        </ion-item>
+      </ion-list>
+      
+    </ion-content>
+  </ion-menu>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- Header principal de la aplicación -->
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-buttons slot="start">
+        <ion-button (click)="openMenu()"> <!-- Botón para abrir el menú -->
+          <ion-icon name="menu"></ion-icon> <!-- Icono de menú -->
+        </ion-button>
+      </ion-buttons>
+      <ion-title>TravelValery</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+  <!-- Contenido principal -->
+  <ion-content id="main-content">
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="Logo" class="logo" />
+    </div>
+
+    <ion-card class="info-card1">
+      <ion-card-header>
+        <ion-card-title>¡Bienvenido!</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+    <ion-card class="info-card2">
+      <ion-card-content>
+        En nuestra App podrás navegar y encontrar paquetes de viajes disponibles.
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</ion-app>

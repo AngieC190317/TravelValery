@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
-import { Tab1Page } from './tab1.page';
-import { Tab1PageRoutingModule } from './tab1-routing.module';
+
+import { ContacPageRoutingModule } from './contac-routing.module';
+
+import { ContacPage } from './contac.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Tab1PageRoutingModule
+    ContacPageRoutingModule
   ],
-  declarations: [Tab1Page]
+  declarations: [ContacPage]
 })
-export class Tab1PageModule {}
+export class ContacPageModule {}

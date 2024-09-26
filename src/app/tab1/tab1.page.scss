@@ -1,0 +1,83 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.logo {
+  width: 150px; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+}
+.info-card1 {
+  margin: 30px;
+  background-color: transparent; /* Color de fondo de la tarjeta */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  transition: transform 0.3s; /* Transición suave para la interacción */
+  text-align: center;
+}
+.info-card2 {
+  margin: 30px;
+  background-color: #ffc6e9; /* Color de fondo de la tarjeta */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  transition: transform 0.3s; /* Transición suave para la interacción */
+}
+.info-card:hover {
+  transform: scale(1.05); /* Aumenta un poco el tamaño al pasar el mouse */
+}
+ion-content {
+  --ion-background-color: #9bc0e4; /* Cambia este color por el tono de azul que prefieras */
+  color: white; /* Color de texto por defecto */
+}
+ion-card-title {
+  font-size: 3em; /* Tamaño de fuente más grande */
+  font-weight: bold; /* Negrita */
+  color: #3880ff; /* Color del título */
+}
+
+ion-card-content {
+  margin: 10px;
+  background-color: #dde7f1;
+  font-size: 1.5em; /* Tamaño de fuente estándar */
+  color: #000000; /* Color del texto */
+}
+ion-menu {
+  --ion-background-color: #dce3fa; /* Color de fondo del menú */
+  --ion-color: rgb(49, 97, 230); /* Color del texto */
+}
+
+ion-content {
+  height: 150vh; /* Ajusta la altura deseada (70% de la altura de la ventana) */
+  max-height: 800px; /* O establece un máximo de altura específico */
+  overflow: auto; /* Permitir el desplazamiento si el contenido excede la altura */
+}
+
+ion-list {
+  max-height: 300px; /* Ajusta esta altura según sea necesario */
+  overflow-y: auto; /* Permitir desplazamiento si el contenido excede la altura */
+  margin: 0; /* Elimina márgenes adicionales */
+  padding: 0; /* Elimina padding adicional */
+}
+ion-item {
+  --background: #f0dde6;/* Fondo transparente para los items */
+  --color: rgb(24, 3, 3); /* Color del texto de los items */
+  transition: background 0.3s; /* Transición suave */
+   padding: 10px 40px; /* Ajustar el padding para que sea más compacto */
+}
+
+
+
+
+ion-list {
+  max-height: 300px; /* Ajusta esta altura según sea necesario */
+  overflow-y: auto; /* Permitir desplazamiento */
+  margin: 0;
+  padding: 0;
+  --ion-background-color: #c8e1f0;
+}
+
+ion-item:hover {
+  --background: rgba(141, 175, 250, 0.377); /* Fondo al pasar el ratón */
+}
+
