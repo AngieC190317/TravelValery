@@ -27,7 +27,7 @@ const routes: Routes = [
   {
     path: 'contact',
     loadChildren: () => import('./contac/contac.module').then(m => m.ContacPageModule)
-  },                                                               
+  },
   {
     path: 'about',
     loadChildren: () => import('./nosotros/nosotros.module').then(m => m.NosotrosPageModule)
@@ -35,7 +35,17 @@ const routes: Routes = [
   {
     path: 'trips',
     loadChildren: () => import('./viajes/viajes.module').then(m => m.ViajesPageModule)
+  },
+  {
+    path: 'contac',
+    loadChildren: () => import('./contac/contac.module').then(m => m.ContacPageModule)
+  },
+  {
+    path: 'nosotros',
+    loadChildren: () => import('./nosotros/nosotros.module').then(m => m.NosotrosPageModule)
   }
+
+
 ];
 
 @NgModule({

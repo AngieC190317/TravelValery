@@ -1,5 +1,7 @@
+import { ContacPage } from './../contac/contac.page';
 import { Component } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
@@ -21,3 +23,5 @@ export class Tab1Page {
     // Lógica para navegar a las diferentes páginas
   }
 }
+
+

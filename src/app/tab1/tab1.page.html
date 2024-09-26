@@ -14,20 +14,20 @@
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item (click)="navigateTo('contact')">
+        <ion-item [routerLink]="['/contac']">
           <ion-icon name="call" slot="start"></ion-icon>
           <span>Contacto</span>
         </ion-item>
-        <ion-item (click)="navigateTo('nosotros')">
+        <ion-item [routerLink]="['/nosotros']">
           <ion-icon name="information-circle" slot="start"></ion-icon>
           <span>Nosotros</span>
         </ion-item>
-        <ion-item (click)="navigateTo('viajes')">
+        <ion-item [routerLink]="['/tabs/tab2']">
           <ion-icon name="airplane" slot="start"></ion-icon>
           <span>Viajes</span>
         </ion-item>
       </ion-list>
-      
+
     </ion-content>
   </ion-menu>
 
