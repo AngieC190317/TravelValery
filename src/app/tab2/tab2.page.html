@@ -13,31 +13,35 @@
     </ion-row>
   </ion-grid>
 
-  <!-- Sección para mostrar la información del paquete seleccionado -->
+  <!-- Paquete Caribe -->
   <ion-card *ngIf="paqueteSeleccionado === 'Paquete el Caribe'">
     <ion-card-header>
       <ion-card-title>Paquete Caribe</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <p style="text-align: center;">
-        El Caribe colombiano es un paraíso de playas de aguas cristalinas y arena 
-        blanca. Este destino ofrece una mezcla única de cultura, historia y
-         naturaleza.
-         <br>
-         Duración: 5 días / 4 noches
-         <br>
-         Precio estimado: $1,500,000 - $2,500,000 COP por persona
-         <br>
-         incluye:
-           <br>
+        El Caribe colombiano es un paraíso de playas de aguas cristalinas y arena
+        blanca. Este destino ofrece una mezcla única de cultura, historia y naturaleza.
+        <br>
+        Duración: 5 días / 4 noches
+        <br>
+        Precio estimado: $1,500,000 - $2,500,000 COP por persona
+        <br>
+        incluye:
+        <br>
         - Transporte aéreo (variable según ciudad de origen).
         - Alojamiento en hoteles 3 o 4 estrellas.
         - Tours y excursiones.
-       -  Alimentación (desayunos y cenas).
+        - Alimentación (desayunos y cenas).
       </p>
+      <!-- Botón para redirigir a otra pestaña -->
+      <ion-button expand="full" [routerLink]="['/detalles-paquete', 'caribe']">
+        Reservar
+      </ion-button>
     </ion-card-content>
   </ion-card>
 
+  <!-- Paquete Andes -->
   <ion-card *ngIf="paqueteSeleccionado === 'Paquete los Andes'">
     <ion-card-header>
       <ion-card-title>Aventura en los Andes</ion-card-title>
@@ -45,22 +49,27 @@
     <ion-card-content>
       <p style="text-align: center;">
         Los Andes colombianos son una región de paisajes montañosos espectaculares,
-         ciudades históricas y una rica cultura cafetera. 
-         <br>
-         Duración: 5 días / 4 noches
-         <br>
-         Precio estimado: $1,200,000 - $1,800,000 COP por persona
-         <br>
-         Incluye:
-         <br>
-         - Transporte terrestre.
-         - Alojamiento en fincas o eco-lodges.
-         - Excursiones y actividades.
-         - Alimentación completa (desayunos, almuerzos y cenas).
+        ciudades históricas y una rica cultura cafetera.
+        <br>
+        Duración: 5 días / 4 noches
+        <br>
+        Precio estimado: $1,200,000 - $1,800,000 COP por persona
+        <br>
+        Incluye:
+        <br>
+        - Transporte terrestre.
+        - Alojamiento en fincas o eco-lodges.
+        - Excursiones y actividades.
+        - Alimentación completa (desayunos, almuerzos y cenas).
       </p>
+      <!-- Botón para redirigir a otra pestaña -->
+      <ion-button expand="full" [routerLink]="['/detalles-paquete', 'andes']">
+        Reservar
+      </ion-button>
     </ion-card-content>
   </ion-card>
 
+  <!-- Paquete Santa Martha -->
   <ion-card *ngIf="paqueteSeleccionado === 'Paquete Santa Martha'">
     <ion-card-header>
       <ion-card-title>Santa Martha</ion-card-title>
@@ -68,91 +77,25 @@
     <ion-card-content>
       <p style="text-align: center;">
         Santa Marta, ubicada en la costa norte de Colombia,
-         es una ciudad llena de historia y belleza natural. 
-         <br>
-         Duración: 3 días / 2 noches
-         <br>
-         Precio estimado: $1,800,000 - $2,800,000 COP por persona
-         <br>
-         incluye:
-         <br>
-          - Alojamiento en hotel frente al mar.
-          - Excursiones a Tayrona y Playa Cristal.
-          - Alimentación (desayunos y cenas).
-          - Transporte terrestre.
-      </p>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card *ngIf="paqueteSeleccionado === 'Paquete Medellin'">
-    <ion-card-header>
-      <ion-card-title>Medellin</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <p style="text-align:center;">
-        Medellín, conocida como "La Ciudad de la Eterna Primavera" 
-        por su clima agradable durante todo el año, es un destino moderno y vibrante.
-    <br>
-    Duración: 8 días / 7 noches
-    <br>
-    Precio estimado: $900,000 - $1,500,000  COP por persona
-    <br>
-    incluye:
-    <br>
-    - Alojamiento en hoteles 3 o 4 estrellas.
-    - Transporte terrestre para excursiones.
-    - Excursión a Guatapé y tours locales.
-    - Alimentación (desayunos).
-      </p>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card *ngIf="paqueteSeleccionado === 'Paquete Bogota'">
-    <ion-card-header>
-      <ion-card-title>Bogota</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <p style="text-align: center;">
-        Bogotá, la capital de Colombia, es una metrópolis vibrante situada e
-        n el altiplano andino. En esta ciudad, los turistas pueden disfrutar 
-        de una rica mezcla de cultura, arte y gastronomía.
-        <br>
-        Duración: 4 días / 3 noches
-        <br>
-        Precio estimado: 1,200,000 - $2,000,000   COP por persona
-        <br>
-        incluye:
-        <br>
-       -  Alojamiento en hoteles 4 estrellas.
-       - Excursión a la Catedral de Sal.
-       - Tour cultural por la ciudad.
-       - Alimentación (desayunos y almuerzos).
-      </p>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card *ngIf="paqueteSeleccionado === 'Paquete Boyaca'">
-    <ion-card-header>
-      <ion-card-title>Boyaca</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <p style="text-align: center;">
-        Boyacá es una región montañosa en el centro de Colombia, 
-        conocida por sus paisajes pintorescos, pueblos coloniales y su 
-        importante papel en la independencia del país.
+        es una ciudad llena de historia y belleza natural.
         <br>
         Duración: 3 días / 2 noches
         <br>
-        Precio estimado: $800,000 - $1,500,000  COP por persona
+        Precio estimado: $1,800,000 - $2,800,000 COP por persona
         <br>
         incluye:
         <br>
-       - Alojamiento en hotel colonial.
-       - Transporte terrestre.
-       - Excursiones a Villa de Leyva y Laguna de Tota.
-       - Alimentación (desayunos).
+        - Alojamiento en hotel frente al mar.
+        - Excursiones a Tayrona y Playa Cristal.
+        - Alimentación (desayunos y cenas).
+        - Transporte terrestre.
       </p>
+      <!-- Botón para redirigir a otra pestaña -->
+      <ion-button expand="full" [routerLink]="['/detalles-paquete', 'santa-martha']">
+        Reservar
+      </ion-button>
     </ion-card-content>
   </ion-card>
-  <!-- Puedes agregar más paquetes aquí -->
+
+  <!-- Puedes agregar más paquetes aquí con su botón de redirección -->
 </ion-content>
